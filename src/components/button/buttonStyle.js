@@ -5,6 +5,6 @@ export const ButtonWrapper = styled.div`
 `;
 export const ButtonRow = styled.div`
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin: 10px 0;
 `;

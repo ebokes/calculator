@@ -10,7 +10,7 @@ const theme = {
         bg: "#616161",
         fg: "#A5A5A5",
       },
-      operator: {
+      arithmetic: {
         bg: "#005DB2",
         fg: "#B2DAFF",
       },
