@@ -1,25 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import { Button } from "./buttonStyle";
 
-const DigitStyle = styled.div`
-  input {
-    width: 50px;
-    height: 50px;
-    border-radius: 16px;
-    font-size: 25px;
-    margin-right: 40px;
-    /* border: none; */
-    cursor: pointer;
-    background-color: ${({ theme }) => theme.color.button.digits.bg};
-    color: ${({ theme }) => theme.color.button.digits.fg};
-  }
-`;
-
-const Digit = ({ num }) => {
+const Digit = ({ value }) => {
   return (
-    <DigitStyle>
-      <input type="button" value={num} />
-    </DigitStyle>
+    <Button bg="#303136" fg="#29A8FF">
+      <input type="button" value={value} />
+    </Button>
   );
 };
 

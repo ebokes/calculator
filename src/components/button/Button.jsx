@@ -14,26 +14,26 @@ const Button = () => {
         <ArithmeticOperator value="/" name="/" />
       </ButtonRow>
       <ButtonRow>
-        <Digit num="7" />
-        <Digit num="8" />
-        <Digit num="9" />
+        <Digit value="7" />
+        <Digit value="8" />
+        <Digit value="9" />
         <ArithmeticOperator value="x" name="*" />
       </ButtonRow>
       <ButtonRow>
-        <Digit num="4" />
-        <Digit num="5" />
-        <Digit num="6" />
+        <Digit value="4" />
+        <Digit value="5" />
+        <Digit value="6" />
         <ArithmeticOperator value="-" name="-" />
       </ButtonRow>
       <ButtonRow>
-        <Digit num="1" />
-        <Digit num="2" />
-        <Digit num="3" />
+        <Digit value="1" />
+        <Digit value="2" />
+        <Digit value="3" />
         <ArithmeticOperator value="+" name="+" />
       </ButtonRow>
       <ButtonRow>
-        <Digit num="0" />
-        <Digit num="." />
+        <Digit value="0" />
+        <Digit value="." />
         <SpecialOperator value="←" />
         <SpecialOperator value="=" name="=" bg="#005DB2" fg="#B2DAFF" />
       </ButtonRow>
