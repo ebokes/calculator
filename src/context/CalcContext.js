@@ -20,11 +20,26 @@ export const CalcContextProvider = ({ children }) => {
 
   // square button
   const handleSquareClick = () => setCalcDisplay((calcDisplay ** 2).toString());
+
   // percent button
   const handlePercentClick = () =>
     setCalcDisplay((calcDisplay / 100).toString());
 
+  // const parse = (a) => (() => a)();
+  function parse(a) {
+    return Function(`'use strict'; return (${a})`)();
+  }
+  // EqualTo
+  const calc = () => {
+    try {
+      setCalcDisplay(parse(calcDisplay).toString());
+    } catch (error) {
+      setCalcDisplay("Math Error");
+    }
+  };
+
   const value = {
+    calc,
     calcDisplay,
     clear,
     backspace,

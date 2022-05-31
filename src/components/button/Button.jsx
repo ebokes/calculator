@@ -6,7 +6,7 @@ import SpecialOperator from "./SpecialOperator";
 import { CalcContext } from "../../context/CalcContext";
 
 const Button = () => {
-  const { clear, backspace, handleSquareClick, handlePercentClick } =
+  const { clear, backspace, handleSquareClick, handlePercentClick, calc } =
     useContext(CalcContext);
   return (
     <ButtonWrapper>
@@ -48,7 +48,7 @@ const Button = () => {
         <Digit value="0" />
         <Digit value="." />
         <SpecialOperator value="←" onClick={backspace} />
-        <SpecialOperator value="=" name="=" bg="#005DB2" fg="#B2DAFF" />
+        <SpecialOperator value="=" bg="#005DB2" fg="#B2DAFF" onClick={calc} />
       </ButtonRow>
     </ButtonWrapper>
   );
