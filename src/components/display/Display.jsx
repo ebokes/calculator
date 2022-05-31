@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { DisplayWrapper } from "./displayStyle";
+import { CalcContext } from "../../context/CalcContext";
 
 const Display = () => {
+  const { calcDisplay } = useContext(CalcContext);
   return (
     <DisplayWrapper>
-      <p>0</p>
+      <p>{calcDisplay}</p>
     </DisplayWrapper>
   );
 };

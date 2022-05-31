@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import "./App.css";
 import Layout from "./components/layout/Layout";
+import { CalcContextProvider } from "./context/CalcContext";
 
 const theme = {
   color: {
@@ -26,7 +27,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Layout />
+        <CalcContextProvider>
+          <Layout />
+        </CalcContextProvider>
       </div>
     </ThemeProvider>
   );
