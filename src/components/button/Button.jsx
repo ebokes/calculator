@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 import ArithmeticOperator from "./ArithmeticOperator";
 import { ButtonRow, ButtonWrapper } from "./buttonStyle";
 import Digit from "./Digit";
 import SpecialOperator from "./SpecialOperator";
+import { CalcContext } from "../../context/CalcContext";
 
 const Button = () => {
+  const { clear, backspace, handleSquareClick, handlePercentClick } =
+    useContext(CalcContext);
   return (
     <ButtonWrapper>
       <ButtonRow>
-        <SpecialOperator value="AC" />
-        <SpecialOperator value="sq" bg="#005DB2" fg="#B2DAFF" />
-        <SpecialOperator value="%" bg="#005DB2" fg="#B2DAFF" />
+        <SpecialOperator value="AC" onClick={clear} />
+        <SpecialOperator
+          value="sq"
+          bg="#005DB2"
+          fg="#B2DAFF"
+          onClick={handleSquareClick}
+        />
+        <SpecialOperator
+          value="%"
+          bg="#005DB2"
+          fg="#B2DAFF"
+          onClick={handlePercentClick}
+        />
         <ArithmeticOperator value="/" name="/" />
       </ButtonRow>
       <ButtonRow>
@@ -34,7 +47,7 @@ const Button = () => {
       <ButtonRow>
         <Digit value="0" />
         <Digit value="." />
-        <SpecialOperator value="←" />
+        <SpecialOperator value="←" onClick={backspace} />
         <SpecialOperator value="=" name="=" bg="#005DB2" fg="#B2DAFF" />
       </ButtonRow>
     </ButtonWrapper>
