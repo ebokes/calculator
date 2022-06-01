@@ -13,7 +13,7 @@ const Button = () => {
       <ButtonRow>
         <SpecialOperator value="AC" onClick={clear} />
         <SpecialOperator
-          value="sq"
+          value="x&#178;"
           bg="#005DB2"
           fg="#B2DAFF"
           onClick={handleSquareClick}

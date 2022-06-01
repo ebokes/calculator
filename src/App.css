@@ -10,3 +10,7 @@
 body {
   background-color: rgb(81, 80, 80);
 }
+
+html {
+  font-size: 62.5%;
+}

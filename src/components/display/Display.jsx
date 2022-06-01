@@ -6,7 +6,7 @@ const Display = () => {
   const { calcDisplay } = useContext(CalcContext);
   return (
     <DisplayWrapper>
-      <p>{calcDisplay}</p>
+      <input type="text" placeholder="0" readOnly value={calcDisplay} />
     </DisplayWrapper>
   );
 };

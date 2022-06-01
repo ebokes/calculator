@@ -16,6 +16,7 @@ export const Button = styled.div`
     border-radius: 16px;
     font-size: 25px;
     cursor: pointer;
+    border: none;
     background-color: ${({ bg }) => bg || "#616161"};
     color: ${({ fg }) => fg || "#A5A5A5"};
   }
