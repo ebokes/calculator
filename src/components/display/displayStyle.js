@@ -1,27 +1,27 @@
 import styled from "styled-components";
 
 export const DisplayWrapper = styled.div`
-  height: 60px;
+  height: 6rem;
   color: #fff;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  box-shadow: 5px 5px 6px -2px #ffffff1f;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  box-shadow: 0.5rem 0.5rem 0.6rem -0.2rem #ffffff1f;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
 
   input {
-    border-radius: 10px;
-    font-size: 30px;
-    padding: 0 10px;
+    border-radius: 1rem;
+    font-size: 3rem;
+    padding: 0 1rem;
     background-color: #191a1f;
-    color: #fff;
+    color: #b4bbc5;
     border: none;
-    border-radius: 10px;
-    height: 60px;
+    border-radius: 1rem;
+    height: 6rem;
     text-align: end;
     width: 100%;
-    box-shadow: -6px -6px 5px -1px #06070b;
+    box-shadow: -0.6rem -0.6rem 0.5rem -0.1rem #06070b;
 
     &::placeholder {
       color: #fff;

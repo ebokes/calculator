@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const LayoutWrapper = styled.div`
-  width: 300px;
-  margin: 40px auto 40px auto;
+  width: 30rem;
+  margin: 20rem auto 4rem auto;
   background-color: #191a1f;
-  border-radius: 20px;
-  box-shadow: -8px -8px 5px 0px #ffffff1f;
+  border-radius: 2rem;
+  box-shadow: -0.8rem -0.8rem 0.5rem 0rem #ffffff1f;
 `;
 
 export const LayoutContainer = styled.div`
-  box-shadow: 6px 9px 5px 3px #06070b;
-  padding: 20px;
-  border-radius: 20px;
+  box-shadow: 0.6rem 0.9rem 0.5rem 0.3rem #06070b;
+  padding: 2rem;
+  border-radius: 2rem;
 `;
