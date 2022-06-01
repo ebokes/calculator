@@ -5,7 +5,7 @@ import { CalcContext } from "../../context/CalcContext";
 const Digit = ({ value }) => {
   const { handleDigitClick } = useContext(CalcContext);
   return (
-    <Button bg="#303136" fg="#29A8FF">
+    <Button>
       <input type="button" value={value} onClick={handleDigitClick} />
     </Button>
   );

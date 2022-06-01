@@ -5,7 +5,7 @@ import { CalcContext } from "../../context/CalcContext";
 const ArithmeticOperator = ({ value, name }) => {
   const { handleArithmeticClick } = useContext(CalcContext);
   return (
-    <Button bg="#005DB2" fg="#B2DAFF">
+    <Button>
       <input
         type="button"
         value={value}

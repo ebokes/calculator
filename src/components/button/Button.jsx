@@ -12,18 +12,8 @@ const Button = () => {
     <ButtonWrapper>
       <ButtonRow>
         <SpecialOperator value="AC" onClick={clear} />
-        <SpecialOperator
-          value="x&#178;"
-          bg="#005DB2"
-          fg="#B2DAFF"
-          onClick={handleSquareClick}
-        />
-        <SpecialOperator
-          value="%"
-          bg="#005DB2"
-          fg="#B2DAFF"
-          onClick={handlePercentClick}
-        />
+        <SpecialOperator value="x&#178;" onClick={handleSquareClick} />
+        <SpecialOperator value="%" onClick={handlePercentClick} />
         <ArithmeticOperator value="/" name="/" />
       </ButtonRow>
       <ButtonRow>
@@ -48,7 +38,7 @@ const Button = () => {
         <Digit value="0" />
         <Digit value="." />
         <SpecialOperator value="←" onClick={backspace} />
-        <SpecialOperator value="=" bg="#005DB2" fg="#B2DAFF" onClick={calc} />
+        <SpecialOperator value="=" onClick={calc} />
       </ButtonRow>
     </ButtonWrapper>
   );
