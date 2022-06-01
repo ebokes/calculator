@@ -11,5 +11,5 @@ export const LayoutWrapper = styled.div`
 export const LayoutContainer = styled.div`
   box-shadow: 6px 9px 5px 3px #06070b;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
 `;
